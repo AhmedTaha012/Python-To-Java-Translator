@@ -10,3 +10,10 @@ then run this command in cmd
 ```
 streamlit run App.py
 ```
+## Screenshots
+### Example-1 (for-while-if-ifelse-else):
+![alt text](E:\CompilerProject\Java-To-Python\ScreenShots\For-While-if-ifelse-else.png)
+### Example-2 (Error checker,missing semicolum):
+![alt text](E:\CompilerProject\Java-To-Python\ScreenShots\Error-SemiColum missing.png)
+### Example-3 (Error checker,missing while braces):
+![alt text](E:\CompilerProject\Java-To-Python\ScreenShots\Error-SemiColum missing.png)

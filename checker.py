@@ -2,8 +2,6 @@ import subprocess
 import os
 
 class checkError:
-    def __init__(self):
-        self.path=os.path.dirname(os.path.abspath(__file__))
     def check_java_syntax(self,java_code):
         try:
             # Create a temporary Java file
