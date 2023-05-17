@@ -4,6 +4,8 @@ from translator import Translator
 from checker import checkError
 import nltk
 import re
+import os
+mainpath=os.path.dirname(os.path.abspath(__file__))
 st.set_page_config(layout="wide")
 st.markdown('## Java To Python Translator')
 
@@ -31,7 +33,6 @@ with first:
     if load:
         with open(filePath, encoding='UTF8') as f:
             contents = f.read()
-            index=True
         c2=st_ace(language="java",value=contents,auto_update=True,height=350,font_size=16)
         check=checkError()
         if check.runChecker(c2)=="Clear":

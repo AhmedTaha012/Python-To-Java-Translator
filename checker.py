@@ -1,13 +1,17 @@
 import subprocess
+import os
+
 class checkError:
+    def __init__(self):
+        self.path=os.path.dirname(os.path.abspath(__file__))
     def check_java_syntax(self,java_code):
         try:
             # Create a temporary Java file
-            with open('temp.java', 'w') as file:
+            with open("temp.java", 'w') as file:
                 file.write(java_code)
                 #file.read('temp.java')
             # Compile the Java file using javac
-            compile_process = subprocess.Popen(['javac', 'temp.java'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+            compile_process = subprocess.Popen(["javac","temp.java"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
             compile_output, compile_errors = compile_process.communicate()
             if compile_process.returncode == 0:
                 # Compilation successful, syntax is correct

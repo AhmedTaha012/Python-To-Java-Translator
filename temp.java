@@ -1,1 +1,13 @@
-class Test {public static void main(String[] args) { int x=0;}}
+class Test {public static void main(String[] args) { int f=0;
+for(int i=0;i<10;i++){
+    int x=0;
+    if(x<10){
+        while(true){
+            int t=0;
+            f=f+1;
+            System.out.print(f);
+	    
+        }
+        
+    }
+}}}

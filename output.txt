@@ -1,1 +1,8 @@
-x=0
+f=0
+for i in range(0,10,1):
+    x=0
+    if x<10:
+        while True:
+            t=0
+            f=f+1
+            print(f)
