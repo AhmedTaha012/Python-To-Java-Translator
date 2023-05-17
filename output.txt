@@ -1,9 +1,1 @@
-x=10
-for i in range(0,10,1):
-    while (x!=3)  or (x<5) :
-        if x%2==0:
-            print('even')
-        elif x==2:
-            print('equal')
-        else:
-            print('odd')
+x=0
